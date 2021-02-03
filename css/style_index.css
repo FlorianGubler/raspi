@@ -1,0 +1,32 @@
+.infobox{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: start;
+}
+.infobox h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(90, 90, 90);
+}
+.splitline{
+    width: 90%;
+    height: 2px;
+    background-color: rgb(138, 138, 221);
+}
+@keyframes icon{
+    0%   {font-size: 75px;color: rgb(214, 214, 214);}
+    50%  {font-size: 150px;color: rgb(163, 163, 163);}
+    100% {font-size: 75px;color: rgb(214, 214, 214);}
+}
+.icon{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(214, 214, 214);
+    animation-name: icon;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
